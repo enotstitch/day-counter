@@ -1,0 +1,26 @@
+{
+  "name": "day-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "parcel": "npx parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enotstitch/day-counter.git"
+  },
+  "author": "enotstitch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enotstitch/day-counter/issues"
+  },
+  "homepage": "https://github.com/enotstitch/day-counter#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "flatpickr": "^4.6.13"
+  }
+}
