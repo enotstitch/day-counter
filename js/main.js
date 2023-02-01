@@ -11,12 +11,13 @@ const yearsText = document.querySelector('.result-item__text--years');
 const daysText = document.querySelector('.result-item__text--days');
 const hoursText = document.querySelector('.result-item__text--hours');
 
-console.log(daysText);
+let nextDay = moment().add('days', 1).format('YYYY-MM-DD');
 
 flatpickrConfig = {
   locale: Russian,
   altInput: true,
-  minDate: 'today',
+  minDate: nextDay,
+  position: 'auto center',
 };
 
 flatpickr('input[type="date"]', flatpickrConfig);
@@ -40,6 +41,10 @@ const count = () => {
   const now = moment();
   let dateDiff = dateValue - now;
 
+  if (isNaN(dateValue)) {
+    return;
+  }
+
   let years = dateValue.diff(now, 'years');
   yearsBlock.textContent = years;
 
@@ -47,13 +52,13 @@ const count = () => {
   let nextYear = dateValue.year();
   let year = now.year();
 
-  for (leapYear; year < nextYear; year++) {
+  for (leapYear; year <= nextYear; year++) {
     if (moment([year]).isLeapYear()) {
       leapYear++;
     }
   }
 
-  let days = Math.round(dateDiff / 1000 / 60 / 60 / 24) % 365;
+  let days = Math.round(dateDiff / 1000 / 60 / 60 / 24 + leapYear) % 365;
   daysBlock.textContent = days;
 
   let hours = Math.round(dateDiff / 1000 / 60 / 60) % 24;

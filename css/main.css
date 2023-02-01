@@ -22,6 +22,11 @@ html {
   src: url('../fonts/Roboto.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Consolate';
+  src: url('../fonts/Consolate.woff2') format('woff2');
+}
+
 body {
   margin: 0;
   background-color: var(--accent-color);
@@ -32,7 +37,7 @@ body {
   color: #ccdbe0;
 }
 
-.flatpickr-calendar::before,
+/* .flatpickr-calendar::before,
 .flatpickr-calendar::after {
   left: 50%;
   transform: translate(-50%);
@@ -42,7 +47,7 @@ body {
   position: absolute !important;
   left: 50% !important;
   transform: translate(-50%) !important;
-}
+} */
 
 .input-reset {
   border: none;
@@ -108,6 +113,7 @@ body {
   margin: 0 auto;
   user-select: none;
   text-transform: uppercase;
+  font-family: 'Consolate', serif;
 }
 
 .result__item {
@@ -117,6 +123,6 @@ body {
 }
 
 .result-item__num {
-  font-size: 90px;
+  font-size: 110px;
   line-height: 1;
 }
