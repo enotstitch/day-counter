@@ -20,7 +20,7 @@ flatpickrConfig = {
   position: 'auto center',
 };
 
-flatpickr('input[type="date"]', flatpickrConfig);
+flatpickr('input[type="text"]', flatpickrConfig);
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -48,17 +48,17 @@ const count = () => {
   let years = dateValue.diff(now, 'years');
   yearsBlock.textContent = years;
 
-  let leapYear = 0;
+  let leapYears = 0;
   let nextYear = dateValue.year();
   let year = now.year();
 
-  for (leapYear; year <= nextYear; year++) {
+  for (leapYears; year <= nextYear; year++) {
     if (moment([year]).isLeapYear()) {
-      leapYear++;
+      leapYears++;
     }
   }
 
-  let days = Math.round(dateDiff / 1000 / 60 / 60 / 24 + leapYear) % 365;
+  let days = Math.round(dateDiff / 1000 / 60 / 60 / 24 + leapYears) % 365;
   daysBlock.textContent = days;
 
   let hours = Math.round(dateDiff / 1000 / 60 / 60) % 24;
