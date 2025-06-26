@@ -2,7 +2,6 @@
   "name": "day-counter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "parcel": "npx parcel index.html"
   },
@@ -17,10 +16,10 @@
   },
   "homepage": "https://github.com/enotstitch/day-counter#readme",
   "devDependencies": {
-    "parcel": "^2.8.3"
+    "parcel": "^2.15.4"
   },
   "dependencies": {
-    "moment": "^2.29.4",
-    "flatpickr": "^4.6.13"
+    "flatpickr": "^4.6.13",
+    "moment": "^2.29.4"
   }
 }
