@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "npx parcel index.html --no-cache",
-    "build": "parcel build index.html --public-url ./ --no-cache"
+    "build": "parcel build index.html --public-url ./ --no-source-maps --no-cache"
   },
   "repository": {
     "type": "git",
