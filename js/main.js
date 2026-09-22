@@ -1,5 +1,7 @@
 import moment from 'moment';
 import flatpickr from 'flatpickr';
+import 'flatpickr/dist/flatpickr.min.css';
+import 'flatpickr/dist/themes/dark.css';
 import { flatpickrConfig } from './flatpickrConfig';
 import { declOfNum } from './declOfNum';
 
