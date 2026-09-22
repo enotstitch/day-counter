@@ -1,6 +1,6 @@
 import moment from 'moment';
 import flatpickr from 'flatpickr';
-import { flatpickrConfig } from './flatpickr';
+import { flatpickrConfig } from './flatpickrConfig';
 import { declOfNum } from './declOfNum';
 
 import {
