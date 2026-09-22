@@ -1,4 +1,4 @@
-import moment from '../node_modules/moment/moment';
+import moment from 'moment';
 import flatpickr from 'flatpickr';
 import { flatpickrConfig } from './flatpickr';
 import { declOfNum } from './declOfNum';
